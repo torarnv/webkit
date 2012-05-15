@@ -13,7 +13,7 @@ haveQt(5) {
     # Use Qt5's module system
     load(qt_module)
     MODULE = webkit
-    MODULE_PRI = $$QT.webkit.module_pri
+    MODULE_PRI = ../Tools/qmake/qt_webkit.pri
 
     BASE_TARGET = $$TARGET
 
