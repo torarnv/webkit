@@ -11,7 +11,7 @@ WEBKIT_DESTDIR = $${ROOT_BUILD_DIR}/lib
 
 haveQt(5) {
     # Use Qt5's module system
-    load(qt_module)
+    load(qt_build_config)
     MODULE = webkit
     MODULE_PRI = ../Tools/qmake/qt_webkit.pri
 
