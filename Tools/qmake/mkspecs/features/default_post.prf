@@ -274,7 +274,7 @@ haveQt(4):contains(TEMPLATE, subdirs):!no_recursive_qmake {
 }
 
 incremental.target = incremental
-incremental.commands = $(MAKE) -f $(MAKEFILE) qmake && $(MAKE) -f $(MAKEFILE)
+incremental.commands = $(MAKE) -f $(MAKEFILE) qmake_all && $(MAKE) -f $(MAKEFILE)
 QMAKE_EXTRA_TARGETS += incremental
 
 # Don't set OBJECTS_DIR for subdirs, as that will unconditionally
